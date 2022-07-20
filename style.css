@@ -10,7 +10,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 50px 140px;
-
 }
 .top-banner {
   display: flex;
@@ -32,6 +31,10 @@ body {
   font-size: 16px;
   font-weight: 400;
   margin-top: 0;
+  width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .top-img {
   padding-top: 33px;
@@ -46,6 +49,7 @@ body {
   padding: 10px 15px;
   color: #ffffff;
   cursor: pointer;
+  margin-bottom: 50px;
 }
 .menu-blogs {
   display: flex;
@@ -91,6 +95,7 @@ body {
 }
 .blog-img img {
   width: 100%;
+  border-radius: 20px;
 }
 .blog-info {
   margin: 0 20px;
@@ -187,7 +192,7 @@ hr {
   padding: 20px;
 }
 @media screen and (max-width: 768px) {
-  .container{
+  .container {
     margin: 50px;
   }
   .top-banner {
@@ -200,9 +205,11 @@ hr {
   }
   .top-title {
     font-size: 40px;
+    line-height: 50px;
   }
   .top-about {
     font-size: 14px;
+    width: 250px;
   }
   .top-img {
     padding-top: 58px;
@@ -258,15 +265,12 @@ hr {
     font-size: 20px;
     font-weight: 400;
   }
-  footer {
-    margin-top: 70px;
-  }
   .footer-link {
     line-height: 40px;
   }
 }
 @media screen and (max-width: 425px) {
-  .container{
+  .container {
     margin: 20px;
   }
   .top-banner {
@@ -284,6 +288,8 @@ hr {
   }
   .top-about {
     font-size: 14px;
+    padding-top: 15px;
+    width: 300px;
   }
   .top-img {
     padding: 0;
