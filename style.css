@@ -13,7 +13,7 @@ body {
 }
 .top-banner {
   display: flex;
-  background-color: #161616;
+  background-color: #07085b;
   border-radius: 30px;
   color: #ffffff;
   justify-content: space-between;
@@ -32,7 +32,9 @@ body {
   font-weight: 400;
   margin-top: 0;
   width: 400px;
-  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -45,16 +47,17 @@ body {
   height: 613px;
 }
 .top-btn {
-  background-color: red;
+  background-color: #ffffff;
   padding: 10px 15px;
-  color: #ffffff;
+  color: #000000;
+  font-weight: 700;
   cursor: pointer;
   margin-bottom: 50px;
-  transition: background 3s ease-in, color 2s ease;
+  transition: background 2s ease-in, color 2s ease-in;
 }
-.top-btn:hover{
-  background-color: #ffffff;
-  color: #dd0000;
+.top-btn:hover {
+  color: #ffffff;
+  background-color: #8b0164;
 }
 .menu-blogs {
   display: flex;
@@ -62,7 +65,6 @@ body {
   grid-column-gap: 24px;
 }
 .menu {
-  background-color: #161616;
   padding: 30px 30px 1px 30px;
   text-align: center;
   border-radius: 10px;
@@ -82,7 +84,7 @@ body {
   color: #000000;
 }
 .menu a.active {
-  background-color: #dd0000;
+  background-color: #07085b;
   color: white;
 }
 
@@ -169,7 +171,7 @@ body {
 /* footer start */
 footer {
   text-align: center;
-  background-color: #161616;
+  background-color: #090523;
   color: #ffffff;
   padding: 130px 0;
   margin-top: 130px;
@@ -225,12 +227,6 @@ hr {
     width: 323px;
     height: 340px;
   }
-  .top-btn {
-    background-color: red;
-    padding: 10px 15px;
-    color: #ffffff;
-    cursor: pointer;
-  }
   .menu-blogs {
     display: flex;
     align-items: center;
@@ -261,7 +257,7 @@ hr {
     margin-top: 50px;
   }
   .viewall button {
-    background-color: #dd0000;
+    background-color: #07085b;
     padding: 10px 30px;
     border-radius: 10px;
     border: 0;
@@ -269,6 +265,9 @@ hr {
     font-family: "Playfair Display", serif;
     font-size: 20px;
     font-weight: 400;
+  }
+  footer {
+    padding: 70px;
   }
   .footer-link {
     line-height: 40px;
@@ -302,12 +301,6 @@ hr {
   .top-img img {
     width: 233px;
     height: 245px;
-  }
-  .top-btn button {
-    background-color: red;
-    padding: 10px 15px;
-    color: #ffffff;
-    cursor: pointer;
   }
   .menu-blogs {
     margin-top: 24px;
