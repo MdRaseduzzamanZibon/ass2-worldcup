@@ -11,6 +11,7 @@ body {
   align-items: center;
   margin: 50px 140px;
 }
+/* top banner start */
 .top-banner {
   display: flex;
   background-color: #07085b;
@@ -59,11 +60,13 @@ body {
   color: #ffffff;
   background-color: #8b0164;
 }
+/* top banner end */
 .menu-blogs {
   display: flex;
   margin-top: 130px;
   grid-column-gap: 24px;
 }
+/* side menu start */
 .menu {
   background-color: #07085b;
   padding: 30px 30px 1px 30px;
@@ -88,9 +91,9 @@ body {
   background-color: #002aff;
   color: white;
 }
+/* side menu end */
 
 /* blog info start */
-
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -138,7 +141,6 @@ body {
 /* blog info end */
 
 /* match info start */
-
 .match {
   text-align: center;
   border: 1px solid rgba(182, 179, 179, 0.541);
@@ -168,7 +170,6 @@ body {
   color: #4d4d4d;
 }
 /* match info end */
-
 /* footer start */
 footer {
   text-align: center;
@@ -183,7 +184,7 @@ footer h2 {
 }
 hr {
   height: 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.249);
   margin: 50px 140px;
 }
 .social-links {
@@ -194,12 +195,13 @@ hr {
   color: #b9b9b9;
   padding: 30px;
 }
-
 .fa-brands {
   font-size: 24px;
   padding: 20px;
   color: #ffffff;
 }
+/* footer end */
+/* tablet media start */
 @media screen and (max-width: 768px) {
   .container {
     margin: 50px;
@@ -271,10 +273,16 @@ hr {
   footer {
     padding: 70px;
   }
+  hr {
+    margin: 30px 50px;
+  }
   .footer-link {
     line-height: 40px;
   }
 }
+/* tablet media end */
+
+/* Mobile media start */
 @media screen and (max-width: 426px) {
   .container {
     margin: 20px;
@@ -319,21 +327,10 @@ hr {
     grid-template-columns: repeat(1, 1fr);
   }
   .tablet {
-    display: none;
+    display: block;
   }
   .viewall {
-    display: inline;
-    margin-top: 50px;
-  }
-  .viewall button {
-    background-color: #07085b;
-    padding: 10px 30px;
-    border-radius: 10px;
-    border: 0;
-    color: #ffffff;
-    font-family: "Playfair Display", serif;
-    font-size: 20px;
-    font-weight: 400;
+    display: none;
   }
   footer {
     padding: 24px;
@@ -342,7 +339,11 @@ hr {
     display: flex;
     flex-direction: column;
   }
+  hr {
+    margin: 24px 20px;
+  }
   .footer-link a {
     padding: 24px;
   }
 }
+/* Mobile media end */
