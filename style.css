@@ -275,7 +275,7 @@ hr {
     line-height: 40px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .container {
     margin: 20px;
   }
